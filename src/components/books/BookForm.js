@@ -22,18 +22,25 @@ const BookForm = () => {
   return (
     <form onSubmit={handleSubmit}>
       <input
+        className="input is-primary"
         type="text"
         placeholder="Book Title"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
       />
       <input
+      className="input is-primary"
         type="text"
         placeholder="Book Author"
         value={author}
         onChange={(e) => setAuthor(e.target.value)}
       />
-      <input type="submit" value="add book" />
+      <button
+        type="submit"
+        className="button is-primary"
+      >
+        Add book
+      </button>
     </form>
   );
 };
